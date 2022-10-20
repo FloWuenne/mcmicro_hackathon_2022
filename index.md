@@ -1,23 +1,9 @@
 ---
-layout: page
-title: Template Hackathon
+title: #MCMICRO hackathon 2022 
 menu_title: Home
 menu_icon: house-door
 ---
 
-{:.secondary}
-# {{ site.event_date }}, in association with the University of Bristol
-
-<!-- REMOVE THIS SECTION when you use this template -->
-<div class="lead" markdown="1">
-This is a demo of the template repository for a public-facing hackathon website,
-built by the [Jean Golding Institute](https://www.bristol.ac.uk/golding/) at the
-University of Bristol.
-
-For more information: view the [README](https://github.com/jean-golding-institute/hackathon-template/blob/main/README.md) 
-or the [GitHub repository](https://github.com/jean-golding-institute/hackathon-template).
-</div>
-<!-- END of section to remove -->
 
 <div class="aside">
     <h2><i class="bi bi-calendar3"></i> Event timeline</h2>
@@ -36,9 +22,6 @@ or the [GitHub repository](https://github.com/jean-golding-institute/hackathon-t
             </dd>
         {% endif %}
 
-        <dt>{{ site.registration_closes_date }}</dt>
-        <dd>Applications close</dd>
-
         <dt>{{ site.event_date }}</dt>
         <dd>Hackathon date</dd>
     </dl>
@@ -46,43 +29,24 @@ or the [GitHub repository](https://github.com/jean-golding-institute/hackathon-t
 
 {% if site.event_status != "over" %}
 
-Scientists from the University of Bristol are hosting a X-day hackathon on
-{{ site.event_date }}, open to researchers, to...
+<img src="./assets/advert.png" alt="Hackathon Logo" style="width:40%;height:20%;">
+<br><br>
+We are excited to announce our first ever MCMICRO hackathon in Heidelberg, brought to you by the Schapiro lab. The Hackathon will take place at the Marsilius Arkaden (Im Neuenheimer Feld 130.3, room K1, 69120 Heidelberg).
 
-Researchers can sign up to [topics ranging from]({{ site.baseurl }}{% link projects.md %})
-... to ..., and more. Teams will be led by senior academics from a range of
-disciplines at the University of Bristol, but participating researchers can be
-from any UK academic institution. [This opportunity]({{ site.baseurl }}{% link registration.md %})
-is open to early career researchers[<sup>(?)</sup>][faq]{:title="What do we mean by an Early Career Researcher (ECR)?"}.
+On this web page, you can find general information regarding the hackathon, like the [agenda](agenda.md), the [participants](about.md) as well as the [projects](projects.md) that we will be working on, as well as some [training resources](resources.md) about nextflow.
 
-Participation is open to **researchers from any UK academic institution**, and
-we encourage contributions from **early career researchers**[<sup>(?)</sup>][faq]{:title="What do we mean by an Early Career Researcher (ECR)?"},
-including PhDs and Postdocs.
+For more information on MCMICRO, please visit the [official MCMICRO main page](https://mcmicro.org/).
 
-## Logistics
+{% include youtube.html video="fnxBvgJQmtY" title="Image Analysis with MCMICRO - Overview" %}
 
-The event will take place virtually, using a combination of **video
-conferencing** (Zoom) for meetings and seminars, and **discussion forums**
-(Slack) for ongoing comms. Data holding and analysis will take place on...
+# Sponsors
+<br><br>
+<img src="./assets/lunaphore_logo.png" alt="Lunaphore Logo" style="width:40%;height:20%;">
 
-## Outputs
-
-By the end of the event, we hope to...
-
-[faq]: {{ site.baseurl }}{% link faq.md %}
+Coffee and food for this event are sponsored by Lunaphore technologies [https://lunaphore.com/](https://lunaphore.com/).
 
 {% else %}
 
-Scientists from the University of Bristol hosted a X-day hackathon on
-{{ site.event_date }}, open to researchers, to...
-
-Researchers could sign up to [topics ranging from]({{ site.baseurl }}{% link projects.md %})
-... to ..., and more. Teams were be led by senior academics from a range of
-disciplines at the University of Bristol, but participating researchers could be
-from any UK academic institution.
-
-The event took place virtually, using a combination of **video conferencing**
-(Zoom) for meetings and seminars, and **discussion forums** (Slack) for ongoing
-comms. Data holding and analysis took place on...
+The first ever MCMICRO hackathon was a great success!
 
 {% endif %}
